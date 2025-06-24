@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-24T15:43:35.304333" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="D:\OneDrive\Documentos\02. Estudos\01. Tecnologia\05. Robot Framework\02. robotFramework-biancaCampos\02. primeiroProjeto\form.robot">
+<test id="s1-t1" name="Cenário 1: preencher formulário" line="69">
+<kw name="abrir navegador e acessar o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:35.543950" level="INFO">Opening browser 'edge' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T15:43:35.543755" elapsed="5.014253"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-24T15:43:40.558209" elapsed="0.029742"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:41.589384" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:40.588110" elapsed="1.001398"/>
+</kw>
+<status status="PASS" start="2025-06-24T15:43:35.543256" elapsed="6.046378"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:41.591449" level="INFO">Typing text 'Gisele' into text field '//input[@name="firstname"]'.</msg>
+<arg>${input_firstName}</arg>
+<arg>Gisele</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T15:43:41.590935" elapsed="0.331853"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:42.923837" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:41.922979" elapsed="1.000959"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:42.924280" level="INFO">Typing text 'Sodré' into text field '//input[@name="lastname"]'.</msg>
+<arg>${input_lastname}</arg>
+<arg>Sodré</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T15:43:42.924073" elapsed="0.141092"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:44.065622" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:43.065317" elapsed="1.000405"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:44.066021" level="INFO">Selecting 'Female' from radio button 'sex'.</msg>
+<arg>${gender_id}</arg>
+<arg>${gender_value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-06-24T15:43:44.065854" elapsed="0.063543"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:45.129923" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:44.129591" elapsed="1.000498"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:45.130602" level="INFO">Selecting '3' from radio button 'exp'.</msg>
+<arg>${experience_id}</arg>
+<arg>${experience_value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-06-24T15:43:45.130317" elapsed="0.068702"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:46.199537" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:45.199178" elapsed="1.000471"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:46.199972" level="INFO">Typing text '04/07/1987' into text field '//input[@id="datepicker"]'.</msg>
+<arg>${input_date}</arg>
+<arg>04/07/1987</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T15:43:46.199785" elapsed="0.064653"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:47.265000" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:46.264581" elapsed="1.000547"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:47.265440" level="INFO">Selecting checkbox '//input[@value="Automation Tester"]'.</msg>
+<arg>${input_profession}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T15:43:47.265261" elapsed="0.115671"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:48.381441" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:47.381131" elapsed="1.000407"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:48.381854" level="INFO">Selecting checkbox '//input[@value="Selenium Webdriver"]'.</msg>
+<arg>${input_tool}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T15:43:48.381667" elapsed="0.064229"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:49.446693" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:48.446040" elapsed="1.000760"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:49.447136" level="INFO">Selecting options from selection list 'continents' by label Antartica.</msg>
+<arg>${continents_id}</arg>
+<arg>${continents_value}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-24T15:43:49.446935" elapsed="0.080643"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:50.528050" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:49.527721" elapsed="1.000426"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:50.528486" level="INFO">Selecting options from selection list 'selenium_commands' by label Browser Commands.</msg>
+<arg>${selenium_commands_id}</arg>
+<arg>${selenium_commands_value}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-06-24T15:43:50.528281" elapsed="0.049404"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:51.578539" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:50.577828" elapsed="1.000810"/>
+</kw>
+<status status="PASS" start="2025-06-24T15:43:41.590479" elapsed="9.988246"/>
+</kw>
+<kw name="enviar formulário">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T15:43:51.579332" level="INFO">Clicking button '//button[@id="submit"]'.</msg>
+<arg>${submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T15:43:51.579175" elapsed="0.050551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T15:43:54.630161" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T15:43:51.629878" elapsed="3.000380"/>
+</kw>
+<status status="PASS" start="2025-06-24T15:43:51.578973" elapsed="3.051368"/>
+</kw>
+<kw name="fechar navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T15:43:54.630829" elapsed="2.197483"/>
+</kw>
+<status status="PASS" start="2025-06-24T15:43:54.630617" elapsed="2.197930"/>
+</kw>
+<status status="PASS" start="2025-06-24T15:43:35.542642" elapsed="21.286122"/>
+</test>
+<status status="PASS" start="2025-06-24T15:43:35.305334" elapsed="21.523945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Form" id="s1" pass="1" fail="0" skip="0">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
